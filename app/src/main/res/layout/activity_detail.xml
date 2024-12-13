@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <!-- ImageView untuk menampilkan gambar artikel -->
+    <ImageView
+        android:id="@+id/imgDetailPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Artikel" />
+
+    <!-- TextView untuk menampilkan judul artikel -->
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="JUDUL"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="2" />
+
+    <!-- TextView untuk menampilkan author -->
+    <TextView
+        android:id="@+id/tvDetailAuthor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Author"
+        android:textSize="14sp"
+        android:textColor="#757575" />
+
+    <!-- TextView untuk menampilkan tanggal artikel -->
+    <TextView
+        android:id="@+id/tvDetailDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Waktu"
+        android:textSize="14sp"
+        android:textColor="#757575" />
+
+    <!-- TextView untuk menampilkan deskripsi artikel -->
+    <TextView
+        android:id="@+id/tvDetailDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Detail"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <!-- WebView untuk menampilkan konten artikel -->
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

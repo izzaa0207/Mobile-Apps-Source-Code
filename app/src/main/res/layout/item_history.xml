@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Animasi -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/img_item_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:lottie_rawRes="@raw/animate_historyitem"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/textName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/img_item_photo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Name" />
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/textAge"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textName"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Age: 30" />
+
+        <!-- Height -->
+        <TextView
+            android:id="@+id/textHeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textAge"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Height: 170 cm" />
+
+        <!-- Weight -->
+        <TextView
+            android:id="@+id/textWeight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textHeight"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Weight: 70 kg" />
+
+        <!-- BMI -->
+        <TextView
+            android:id="@+id/textBMI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textWeight"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="BMI: 24.2" />
+
+        <!-- Blood Sugar -->
+        <TextView
+            android:id="@+id/textBloodSugar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textBMI"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Blood Sugar: 90 mg/dL" />
+
+        <!-- Blood Pressure -->
+        <TextView
+            android:id="@+id/textBloodPressure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textBloodSugar"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Blood Pressure: 120/80" />
+
+        <!-- Result -->
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins"
+            android:textStyle="italic"
+            app:layout_constraintStart_toStartOf="@+id/textName"
+            app:layout_constraintTop_toBottomOf="@+id/textBloodPressure"
+            app:layout_constraintEnd_toEndOf="@+id/textName"
+            tools:text="Result: Healthy" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

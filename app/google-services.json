@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1089531419152",
+    "project_id": "diabesafe-7c6d2",
+    "storage_bucket": "diabesafe-7c6d2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089531419152:android:3e412433b8e15969fc8895",
+        "android_client_info": {
+          "package_name": "com.capstone.diabesafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIiYmkfuKnK4UWlL_HkGLcJ4E0pFdLcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

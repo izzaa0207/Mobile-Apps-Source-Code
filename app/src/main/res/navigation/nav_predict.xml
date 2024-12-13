@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_predict"
+    app:startDestination="@id/inputPredictionFragment">
+
+    <!-- Fragment untuk inputPredictionFragment -->
+    <fragment
+        android:id="@+id/inputPredictionFragment"
+        android:name="com.capstone.diabesafe.ui.prediction.input.InputPredictionFragment"
+        android:label="fragment_input_prediction"
+        tools:layout="@layout/fragment_input_prediction" />
+
+    <!-- Aksi menuju ResultPositiveFragment -->
+    <action
+        android:id="@+id/action_inputFragment_to_resultPositiveFragment"
+        app:destination="@id/resultPositiveFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"/>
+
+    <!-- Aksi menuju ResultNegativeFragment -->
+    <action
+        android:id="@+id/action_inputFragment_to_resultNegativeFragment"
+        app:destination="@id/resultNegativeFragment"
+        app:enterAnim="@anim/fade_in"
+        app:exitAnim="@anim/fade_out"/>
+
+    <!-- Fragment untuk ResultPositiveFragment -->
+    <fragment
+        android:id="@+id/resultPositiveFragment"
+        android:name="com.capstone.diabesafe.ui.prediction.result1.ResultPositiveFragment"
+        android:label="Result Positive"
+        tools:layout="@layout/fragment_result_positive" />
+
+    <!-- Fragment untuk ResultNegativeFragment -->
+    <fragment
+        android:id="@+id/resultNegativeFragment"
+        android:name="com.capstone.diabesafe.ui.prediction.result2.ResultNegativeFragment"
+        android:label="Result Negative"
+        tools:layout="@layout/fragment_result_negative" />
+
+</navigation>
